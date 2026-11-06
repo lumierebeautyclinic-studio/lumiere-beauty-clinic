@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LUMIÈRE Beauty Clinic — thoughtful beauty and skincare treatments tailored to you.">
+    <title>LUMIÈRE | Beauty Clinic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a class="logo" href="#home">LUMIÈRE<span>.</span></a>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-links" id="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#booking">Contact</a>
+                <a class="nav-cta" href="#booking">Book a Visit</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-overlay"></div>
+            <div class="hero-content container">
+                <p class="eyebrow hero-eyebrow">A MOMENT JUST FOR YOU</p>
+                <h1>Reveal Your<br><em>Natural Beauty.</em></h1>
+                <p class="hero-description">Thoughtful care, timeless beauty, and treatments designed around you.</p>
+                <a class="button button-light" href="#booking">Book Your Appointment <span aria-hidden="true">↗</span></a>
+            </div>
+            <a class="hero-scroll" href="#about">SCROLL TO DISCOVER <span>↓</span></a>
+        </section>
+
+        <section class="intro section-space" id="about">
+            <div class="container intro-grid reveal">
+                <div class="intro-image-wrap">
+                    <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=1000&auto=format&fit=crop&q=85" alt="Calm and elegant skincare treatment room">
+                    <span class="image-caption">YOUR BEAUTY, OUR CARE</span>
+                </div>
+                <div class="intro-copy">
+                    <p class="eyebrow">WELCOME TO LUMIÈRE</p>
+                    <h2>Beauty begins with<br><em>feeling good.</em></h2>
+                    <p class="body-copy">At LUMIÈRE, we believe beauty is personal. Our approach combines thoughtful care, a calm atmosphere, and treatments selected to help you feel confident in your own skin.</p>
+                    <a class="text-link" href="#services">Discover our treatments <span>→</span></a>
+                    <div class="intro-note"><span>01</span><p>Care that feels personal.<br>Results that feel like you.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services section-space" id="services">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">WHAT WE OFFER</p>
+                    <h2>Care for every <em>you.</em></h2>
+                    <p class="body-copy">Explore our selection of beauty and skincare services.</p>
+                </div>
+                <div class="service-grid">
+                    <article class="service-card reveal">
+                        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=900&auto=format&fit=crop&q=85" alt="Relaxing facial skincare treatment">
+                        <div class="service-card-copy"><span>01 / SKIN</span><h3>Facial Treatments</h3><p>A refreshing experience focused on your skin's needs.</p></div>
+                    </article>
+                    <article class="service-card reveal">
+                        <img src="https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?w=900&auto=format&fit=crop&q=85" alt="Skincare products arranged for a treatment">
+                        <div class="service-card-copy"><span>02 / CARE</span><h3>Skin Care</h3><p>Personalized care to support a healthy-looking glow.</p></div>
+                    </article>
+                    <article class="service-card reveal">
+                        <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=900&auto=format&fit=crop&q=85" alt="Beauty and self-care treatment">
+                        <div class="service-card-copy"><span>03 / BEAUTY</span><h3>Beauty Treatments</h3><p>Small details and thoughtful treatments, made for you.</p></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="quote-band">
+            <div class="container reveal">
+                <p class="eyebrow">THE LUMIÈRE EXPERIENCE</p>
+                <h2>“Take time to care for<br><em>the person you are.”</em></h2>
+            </div>
+        </section>
+
+        <section class="booking section-space" id="booking">
+            <div class="container booking-grid">
+                <div class="booking-copy reveal">
+                    <p class="eyebrow">LET'S CONNECT</p>
+                    <h2>Your time for<br><em>self-care.</em></h2>
+                    <p class="body-copy">Ready to plan your visit? Send us your details and preferred service. Our team will get back to you to confirm the appointment.</p>
+                    <div class="contact-detail"><span>LOCATION</span><p>Visit us at LUMIÈRE Beauty Clinic</p></div>
+                    <div class="contact-detail"><span>OPENING HOURS</span><p>Saturday – Thursday<br>10:00 AM – 8:00 PM</p></div>
+                </div>
+
+                <form class="booking-form reveal" id="booking-form">
+                    <h3>Book an Appointment</h3>
+                    <p class="form-intro">Please complete the form below.</p>
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
+
+                    <label for="service">Choose a Service</label>
+                    <select id="service" name="service" required>
+                        <option value="" disabled selected>Select a service</option>
+                        <option>Facial Treatments</option>
+                        <option>Skin Care</option>
+                        <option>Beauty Treatments</option>
+                        <option>Consultation</option>
+                    </select>
+
+                    <label for="date">Preferred Date</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="message">Additional Message <span>(optional)</span></label>
+                    <textarea id="message" name="message" rows="4" placeholder="Anything you would like us to know?"></textarea>
+
+                    <button class="button button-dark" type="submit">Send Booking Request <span aria-hidden="true">↗</span></button>
+                    <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+                    <p class="form-note">Demo form: this request is not sent to a clinic yet.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <a class="logo footer-logo" href="#home">LUMIÈRE<span>.</span></a>
+            <p>Thoughtful beauty. Personal care.</p>
+            <a href="#home" class="back-top">BACK TO TOP ↑</a>
+        </div>
+        <div class="container footer-bottom"><span>© <span id="year"></span> LUMIÈRE Beauty Clinic</span><span>Designed with care.</span></div>
+    </footer>
+</body>
+</html>
